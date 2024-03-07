@@ -1,0 +1,492 @@
+/*global start*/
+@import 'mixins';
+@import 'variables';
+@import 'typography';
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 1.6rem;
+    font-family: "Roboto Slab", serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:focus {
+    color: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*global end*/
+
+/*header start*/
+header.site-header {
+    background: transparent;
+    font-size: 18px;
+    padding: 14px 0;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    transition: .3s;
+}
+
+header.site-header.sticky {
+    background: $clr-blackish;
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    padding: 10px 0;
+    position: fixed;
+}
+
+.site-header .site-nav ul li a.active {
+    color: $clr-red;
+}
+
+.site-logo img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.site-nav a {
+    padding: 8px 12px !important;
+    display: inline-block;
+    font-weight: 500;
+    color: $clr-white;
+
+    &:hover {
+        color: $clr-red;
+    }
+}
+
+
+.site-header {
+    padding: 10px 0;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.closed-menu {
+    display: none;
+}
+
+.menu-toggle {
+    display: none !important;
+}
+
+
+
+/*header end*/
+
+
+/*footer-css-start*/
+.footer {
+    background: $clr-blackish;
+    padding: 50px 0;
+
+    &-logo {
+        img {
+            max-width: 250px;
+        }
+    }
+
+    &-links {
+        h2 {
+            color: $clr-white;
+        }
+
+        h3 {
+            color: $clr-white;
+            font-size: 25px;
+        }
+
+        li a {
+            color: $clr-white;
+
+            &:hover {
+                color: $clr-red;
+            }
+        }
+    }
+
+    &-adresse {
+        h2 {
+            color: $clr-white;
+        }
+
+        h3 {
+            color: $clr-white;
+            font-size: 25px;
+        }
+
+        p {
+            color: $clr-white;
+        }
+    }
+
+    &-mails {
+
+        a,
+        i {
+            color: $clr-white;
+        }
+
+    }
+}
+
+.social-signals {
+    padding: 25px 0;
+
+    i {
+        color: $clr-red;
+        font-size: 24px;
+        text-align: center;
+        line-height: 40px;
+        margin: 0 10px;
+        border: 1px solid $clr-white;
+        border-radius: 30px;
+        height: 40px;
+        width: 40px;
+        transition: .3s linear;
+
+        &:hover {
+            transform: translateY(-10px);
+            color: $clr-white;
+        }
+    }
+}
+
+.social-signals img {
+    max-width: 40px;
+    height: 40px;
+    border: 1px solid $clr-white;
+    border-radius: 40px;
+    margin-top: -8px;
+    transition: 0.3s linear;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+}
+
+/*footer-css-end*/
+
+/*home-css-start*/
+.homebanner.banner {
+    background-image: url(../images/homebanner.jpeg);
+    height: 550px;
+    position: relative;
+
+    &::after {
+        height: 550px;
+    }
+}
+
+.toptext {
+    padding: 30px 0 0 0;
+}
+
+.hotelscard {
+    h2 {
+        text-align: center;
+    }
+
+    .box {
+        position: relative;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        padding: 20px;
+        height: 100%;
+
+        .content-box {
+            transition: all .3s ease;
+            background-color: $clr-white;
+            margin: 0 auto;
+            border-radius: 8px;
+
+            h3 {
+                color: $clr-red;
+                font-weight: 700;
+            }
+
+            p {
+                color: $clr-black;
+                text-align: left;
+            }
+
+            span {
+                font-weight: 700;
+                font-size: 18px;
+            }
+        }
+
+        img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            transition: all .3s ease;
+            ;
+        }
+    }
+}
+
+.col-sm-12.col-md-6.col-lg-6.outer {
+    margin-bottom: 25px;
+}
+
+/*Start Faq css*/
+.faq-page {
+    width: 100%;
+    background-color: $clr-blackish !important;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.casino-text.hoteli {
+    padding: 0 0 50px 0 !important;
+}
+
+.faq-item {
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    font-size: 16px;
+    line-height: 25px;
+    color: $clr-white;
+    font-weight: 700;
+    font-family: 'Cuprum';
+}
+
+.faq-section {
+    padding-bottom: 50PX;
+}
+
+.faq-answer {
+    font-size: 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    p {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        color: $clr-bg;
+    }
+}
+
+.faq-answer.active {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.icon-container i {
+    font-size: 16px;
+    cursor: pointer;
+    color: $clr-bg;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-container i.active {
+    transform: rotate(90deg);
+}
+
+/*End Faq css*/
+
+/*cookie start*/
+.cookie-alert {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 !important;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 500ms ease-out;
+    left: 0;
+}
+
+.cookie-alert.show {
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+}
+
+a.btn.btn-primary.accept-cookies {
+    background: $clr-red;
+    color: $clr-white;
+    padding: 6px 22px;
+    font-size: 20px;
+    border: 1px solid $clr-red;
+    font-family: 'Cuprum';
+}
+
+/*cookie end*/
+
+/*home-css-end*/
+
+
+/*about-css-start*/
+.aboutbanner.banner {
+    background-image: url(../images/aboutbanner.jpg);
+    height: 450px;
+    position: relative;
+}
+
+.contact-form .about_us_content {
+    margin: 0 0 30px 0;
+
+    h2 {
+        margin: 30px 0 !important;
+    }
+}
+
+.contact-form .form-group {
+    margin-bottom: 2rem;
+}
+
+.contact-form .input-control {
+    display: block;
+    width: 100%;
+    height: 4rem;
+    border: 1px solid $clr-blackish;
+    padding: 2rem 2rem;
+    background: transparent;
+    color: $clr-black;
+}
+
+.contact-form .input-control:focus-visible {
+    outline: none;
+}
+
+.contact-form textarea.input-control {
+    resize: none;
+    height: auto;
+}
+
+.contact-form .form-group .submit-btn {
+    background: $clr-red;
+    border: 1px solid $clr-red;
+    transition: all 0.2s linear;
+    display: inline-block;
+    padding: 0.8rem 4rem;
+    color: $clr-blackish;
+    text-transform: capitalize;
+
+    &:hover {
+        background-color: transparent;
+        color: $clr-black;
+    }
+}
+
+.contact-form .form-group label {
+    display: inline-block;
+    padding-bottom: 5px;
+    color: $clr-blackish;
+    transition: all 0.2s linear;
+    font-family: 'Cuprum';
+    text-transform: capitalize;
+    font-size: 18px;
+
+}
+
+/*about-css-end*/
+
+/*deals-css-start*/
+.dealsbanner.banner {
+    background-image: url(../images/dealbanner.jpg);
+    height: 450px;
+    position: relative;
+}
+
+.deal {
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    &main {
+        padding: 50px 0 0 0;
+    }
+
+    &-inner {
+        padding: 50px 30px;
+        background: $clr-blackish;
+
+        img {
+            max-width: 50px;
+            height: 50px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: $clr-red;
+        }
+
+        p {
+            color: $clr-white;
+        }
+    }
+}
+
+
+.lasvegas .row {
+    row-gap: 20px;
+}
+
+/*deals-css-end*/
+/*# sourceMappingURL=style.css.map */
