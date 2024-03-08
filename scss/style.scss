@@ -489,4 +489,88 @@ a.btn.btn-primary.accept-cookies {
 }
 
 /*deals-css-end*/
+
+/*privacy-policy start*/
+.privacy__section.banner {
+    background-image: url(../images/privacybanner.jpg);
+    margin-top: 0;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 450px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.55);
+        z-index: -1;
+        height: 450px;
+    }
+}
+
+.privacy-policy {
+    padding: 40px 0;
+
+    .content-wrap {
+        li {
+            font-size: 16px;
+        }
+
+        h3 {
+            color: $clr-red;
+        }
+
+        p {
+            color: $clr-black;
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+}
+.terms__section.banner {
+    background-image: url(../images/termsbanner.jpg);
+    margin-top: 0;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 450px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.55);
+        z-index: -1;
+        height: 450px;
+    }
+}
+
+.terms {
+    padding: 40px 0;
+
+    .content-wrap {
+        li {
+            font-size: 16px;
+        }
+
+        p {
+            color: $clr-black;
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        h3 {
+            color: $clr-red;
+        }
+    }
+}
+
+/*privacy-policy end*/
 /*# sourceMappingURL=style.css.map */
