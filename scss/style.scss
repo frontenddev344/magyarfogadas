@@ -183,7 +183,7 @@ header.site-header.sticky {
         font-size: 24px;
         text-align: center;
         line-height: 40px;
-        margin: 0 10px;
+        margin: 0 6px;
         border: 1px solid $clr-white;
         border-radius: 30px;
         height: 40px;
@@ -192,7 +192,6 @@ header.site-header.sticky {
 
         &:hover {
             transform: translateY(-10px);
-            color: $clr-white;
         }
     }
 }
@@ -202,7 +201,7 @@ header.site-header.sticky {
     height: 40px;
     border: 1px solid $clr-white;
     border-radius: 40px;
-    margin-top: -8px;
+    margin-top: -13px;
     transition: 0.3s linear;
 
     &:hover {
@@ -237,6 +236,9 @@ header.site-header.sticky {
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
         padding: 20px;
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
 
         .content-box {
             transition: all .3s ease;
@@ -422,7 +424,7 @@ a.btn.btn-primary.accept-cookies {
     transition: all 0.2s linear;
     display: inline-block;
     padding: 0.8rem 4rem;
-    color: $clr-blackish;
+    color: $clr-white;
     text-transform: capitalize;
 
     &:hover {
