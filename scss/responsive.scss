@@ -185,6 +185,10 @@
     .deal-grid {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .footer-logo img {
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width:575px) {

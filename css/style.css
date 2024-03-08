@@ -256,12 +256,12 @@ header.site-header.sticky {
   font-size: 24px;
   text-align: center;
   line-height: 40px;
-  margin: 0 6px;
   border: 1px solid #fff;
   border-radius: 30px;
   height: 40px;
   width: 40px;
   transition: 0.3s linear;
+  margin-left: 13px;
 }
 .social-signals i:hover {
   transform: translateY(-10px);
@@ -274,6 +274,7 @@ header.site-header.sticky {
   border-radius: 40px;
   margin-top: -13px;
   transition: 0.3s linear;
+  margin-left: 13px;
 }
 .social-signals img:hover {
   transform: translateY(-10px);
@@ -294,6 +295,11 @@ header.site-header.sticky {
   padding: 30px 0 0 0;
 }
 
+.hotelscard {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
 .hotelscard h2 {
   text-align: center;
 }
@@ -302,9 +308,6 @@ header.site-header.sticky {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
 }
 .hotelscard .box .content-box {
   transition: all 0.3s ease;
