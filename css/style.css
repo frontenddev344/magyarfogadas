@@ -557,6 +557,8 @@ a.btn.btn-primary.accept-cookies {
 }
 .privacy-policy .content-wrap li {
   font-size: 16px;
+  font-family: "Poppins";
+  margin: 8px 0;
 }
 .privacy-policy .content-wrap h3 {
   color: #be2d32;
@@ -592,6 +594,8 @@ a.btn.btn-primary.accept-cookies {
 }
 .terms .content-wrap li {
   font-size: 16px;
+  font-family: "Poppins";
+  margin: 8px 0;
 }
 .terms .content-wrap p {
   color: #0C0B0B;
