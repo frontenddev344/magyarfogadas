@@ -303,9 +303,6 @@ header.site-header.sticky {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .hotelscard .box .content-box {
   transition: all 0.3s ease;
