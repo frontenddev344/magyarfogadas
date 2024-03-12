@@ -579,4 +579,57 @@ a.btn.btn-primary.accept-cookies {
 }
 
 /*privacy-policy end*/
+
+/*betting-section-start*/
+/***hotels list**/
+.list-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto 30px;
+    padding: 20px;
+    box-shadow: 1px 1px 5px 0px #aaaaaa69;
+    background: #fff;
+    border: 1px solid $clr-blackish;
+}
+
+.list-box>a:first-child {
+    width: 20%;
+}
+
+.list-box a img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+a.button {
+    background: $clr-red;
+    padding: 16px 8px;
+    color: $clr-bg;
+    display: block;
+
+    &:hover {
+        background-color: $clr-black;
+        color: $clr-bg;
+    }
+}
+
+.content {
+    width: 60%;
+
+    h3 {
+        color: $clr-red;
+    }
+}
+
+.list-box>a:last-child {
+    width: 15%;
+    text-align: center;
+}
+
+/*betting-section-end*/
+
+
 /*# sourceMappingURL=style.css.map */

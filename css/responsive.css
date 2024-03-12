@@ -254,6 +254,16 @@ h3 {
   .deal-grid {
     grid-template-columns: repeat(1, 1fr);
   }
+  .list-box {
+    display: block;
+  }
+  .content {
+    padding-top: 25px;
+    width: 100%;
+  }
+  .list-box > a:last-child {
+    width: 40%;
+  }
   .footer-logo img {
     margin-bottom: 20px;
   }
@@ -261,6 +271,9 @@ h3 {
 @media screen and (max-width: 575px) {
   .site-nav {
     width: 100%;
+  }
+  .list-box > a:last-child {
+    width: 55%;
   }
 }
 
